@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>K.J.Cheong Portfolio</title>
+    <meta name="description" content="Kyung-Jae Cheong's Portfolio">
+    <meta name="author" content="KyungJae Cheong">
+    <meta property="og:title" content="K.J.Cheong Portfolio">
+    <meta property="og:description" content="Kyung-Jae Cheong's Portfolio">
+    <meta property="og:image" content="{{ url_for('images', filename='og-img.jpeg') }}">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
@@ -80,13 +85,18 @@
                 <div class="col-md-8">
                     <h2>AI 전문가를 꿈꾸는 DataScientist</h2>
                     <p>
-                        안녕하세요. 늘 배움과 새로움을 추구하는 AI 꿈나무입니다.<br><br>
+                        안녕하세요. 늘 배움과 새로움을 추구하는 AI 꿈나무입니다.<br>
                         Hi there, I'm an AI Dreamer who always pursues Learning and Newness.
                     </p>
                     <br>
                     <p>
-                        성실함과 꼼꼼한 성격, 꾸준한 공부 습관이 저의 장점입니다.<br><br>
+                        성실함과 꼼꼼한 성격, 꾸준한 공부 습관이 저의 장점입니다.<br>
                         Sincerity, Meticulous personality, and Steady study habits are my strengths.
+                    </p>
+                    <br>
+                    <p>
+                        저의 주된 관심 분야는 AI를 헬스케어와 의료분야에 적용하는 것입니다.<br>
+                        My main interest is to apply AI to Healthcare and Medical fields.
                     </p>
                 </div>
             </div>
@@ -190,17 +200,126 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
+                <div class="project no-image shadow-large">
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>
+                            Kor-DEEPression
+                        </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            2023.01 ~ 2023.02<br>
+                            (개인 프로젝트)
                         </p>
-                        <a href="#">View Project</a>
+                        <img src="images/Kor-DEEP.jpg" style="width:160px; height:160px"/>
+                        <h4>
+                            한국형 우울증 딥러닝 예측 진단 프로그램 개발 및 배포<br>
+                            Korean Depression Deep-Learning Model and Diagnosis Program
+                        </h4>
+                        <a href="https://kor-deepression-kyungjaecheong.koyeb.app/" target="_blank" class="btn-rounded-gray">
+                            <img src="images/Kor-DEEP-icon.png">
+                            Web Page
+                        </a>
+                        <br><br><br>
+                        <h3>프로젝트 개요<br>(Outline)</h3>
+                        <p>
+                            국민건강영양조사 데이터를 통해<br>
+                            <b>우울증 및 주요우울장애(MDD)</b>를<br>
+                            진단하는 <b>딥러닝 모델을 개발</b>하고<br>
+                            프로그램을 <b>웹페이지로 배포</b>하는<br>
+                            풀스택 딥러닝 프로젝트<br>
+                            <b>(Full-Stack DL Project)</b>
+                        </p>
+                        <a href="https://github.com/kyungjaecheong/Kor-DEEPression" target="_blank" class="btn-rounded-gray">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            Github Repo
+                        </a>
+                        <br><br><br>
+                        <div class="col-sm-6">
+                            <h3>기획의도<br>(Intention)</h3>
+                            <br>
+                            <p>
+                                우울증 고위험군 예측은<br>
+                                <b>우울증 예방</b>에 있어서<br>
+                                매우 중요한 문제입니다.<br>
+                                <br>
+                                하지만<br>
+                                대다수의 우울증 환자들은<br>
+                                <b>증세가 심해진 이후에 검사를<br>
+                                실시</b>하는 경우가 많습니다.<br>
+                                <br>
+                                따라서<br>
+                                간단한 문진만으로<br>
+                                <b>우울증과 주요우울장애</b>를<br>
+                                진단하는 <b>딥러닝 모델을 구현</b><br>
+                                하고, <b>웹페이지로 배포</b>하는<br>
+                                프로젝트를 기획하고<br>
+                                진행하게 되었습니다.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>절차 & 기술<br>(Procedure)</h3>
+                            <p>
+                                주요 개발 언어 : <b>Python</b>
+                            </p>
+                            <p>
+                                <b>[ 데이터 수집 & Cloud DB ]</b><br>
+                                SPSS, Pandas,<br>
+                                PostgreSQL
+                            </p>
+                            <p>
+                                <b>[ 시각화 분석 & 대시보드 ]</b><br>
+                                Pandas, Numpy,<br>
+                                Matplotlib, Seaborn,<br>
+                                Plotly,<br>
+                                Google Looker Studio
+                            </p>
+                            <p>
+                                <b>[ ML / DL 모델링 ]</b><br>
+                                Scikit-Learn, LightGBM,<br>
+                                Tensorflow, Keras
+                            </p>
+                            <p>
+                                <b>[ Deployment (배포) ]</b><br>
+                                Tensorflow-lite,<br>
+                                Bootstrap (HTML5, CSS3)<br>
+                                Flask, Gunicorn, Koyeb
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <img src="images/k-deep-pipeline.jpg" style="width:100%;">
+                            <br><br><br>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 결과물<br>(Results)</h3>
+                            <p>
+                                웹페이지 링크<br>
+                                <a href="https://kor-deepression-kyungjaecheong.koyeb.app/" target="_blank" class="btn-rounded-gray">
+                                    <img src="images/Kor-DEEP-icon.png">
+                                Web Page
+                                </a>
+                                <br><br>
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7">
+                            <img src="images/k-deep-result-desktop.jpg" style="width:100%;">
+                            <br><br>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="images/k-deep-result-mobile.jpg" style="width:100%;">
+                            <br><br>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 소스코드<br>(Source Code)</h3>
+                            <p>
+                                <a href="https://github.com/kyungjaecheong/Kor-DEEPression" target="_blank" class="btn-rounded-gray">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    Github Repo
+                                </a>
+                            </p>
+                        </div>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -208,15 +327,361 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/aib-logo-300.png" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>
+                            Codestates AIB Project (DS-track)
+                        </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            2023.01 (개인 프로젝트)
                         </p>
-                        <a href="#">View Project</a>
+                        <h3>0과 1을 분류하는 인공신경망 프로그래밍</h3>
+                        <p>
+                            제한된 라이브러리(numpy,pandas,csv,matplotlib)로 <b>인공신경망</b>을 구현하는 Codestates AIB DataScientist 프로젝트
+                            <br><br>
+                            <a href="https://github.com/kyungjaecheong/Binary_ANN_Programming" target="_blank" class="btn-rounded-gray">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github Repo
+                            </a>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image shadow-large">
+                    <div class="project-info">
+                        <h3>
+                            Alzheimer & MCI<br>
+                            Deep-Learning<br>
+                            Diagnosis Model
+                        </h3>
+                        <p>
+                            2022.12 (개인 프로젝트)
+                        </p>
+                        <img src="images/brain-alz.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
+                        <h4>
+                            딥러닝 기반 알츠하이머 및 경도인지장애(MCI) 진단 모델 개발<br>
+                            Deep Learning based Alzheimer and MCI Diagnosis Model
+                        </h4>
+                        <h3>프로젝트 개요<br>(Outline)</h3>
+                        <p>
+                            <b>합성곱 신경망(CNN)</b>을 통해<br>
+                            ADNI Brain MRI 이미지를<br>
+                            <b>알츠하이머와 경도인지장애</b>로<br>
+                            분류하는 모델을 구현하는<br>
+                            딥러닝 프로젝트<br>
+                            <b>(DL Project)</b>
+                        </p>
+                        <a href="https://github.com/kyungjaecheong/Alzheimer_MCI-CNN_Classifier" target="_blank" class="btn-rounded-gray">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            Github Repo
+                        </a>
+                        <br><br>
+                        <a href="https://velog.io/@dankj1991/Project-Alzheimer-MCI-Deep-Learning-Diagnosis-Model-1-Intro-Metadata" target="_blank" class="btn-rounded-gray">
+                            <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                            Tech Blog
+                        </a>
+                        <br><br><br>
+                        <div class="col-sm-6">
+                            <h3>기획의도<br>(Intention)</h3>
+                            <p>
+                                급속한 고령화로 인해<br>
+                                치매 유병률을 계속 상승할<br>
+                                것으로 전망되고 있기 때문에<br>
+                                <b>경도인지장애 진단을 통한<br>
+                                치매 예방</b>은 상당히<br>
+                                중요한 문제입니다.<br>
+                                <br>
+                                또한 알츠하이머 진단에서<br>
+                                가장 중요한 <b>뇌촬영 검사</b>는<br>
+                                <b>일반적인 통계적 방법으로는<br>
+                                진단에 어려움</b>이 있습니다.<br>
+                                <br>
+                                따라서<br>
+                                <b>합성곱 신경망(CNN)을 통한<br>
+                                알츠하이머와 경도인지장애<br>
+                                예측 진단 모델</b>을 통해서<br>
+                                보다 <b>정확한 치매 진단</b><br>
+                                <b>치매 예방</b>에 기여하고자<br>
+                                본 프로젝트를 기획하고<br>
+                                진행하게 되었습니다.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>절차 & 기술<br>(Procedure)</h3><br>
+                            <p>
+                                주요 개발 언어 : <b>Python</b>
+                            </p><br>
+                            <p>
+                                <b>[ 주요 개발 툴 ]</b><br>
+                                VSCode, Jupyter,<br>
+                                Google Colab
+                            </p><br>
+                            <p>
+                                <b>[ Data 처리 & 시각화 ]</b><br>
+                                Pandas, Numpy,<br>
+                                Matplotlib, Seaborn,<br>
+                                Plotly,<br>
+                                Google Looker Studio,<br>
+                                Scikit-Learn
+                            </p><br>
+                            <p>
+                                <b>[ Deep-Learning 모델링 ]</b><br>
+                                Tensorflow, Keras<br>
+                                ResNet50V2,<br>
+                                Keras-tuner
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <img src="images/brain-alz-pipeline.png" style="width:100%;">
+                            <br><br><br>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 결과물<br>(Results)</h3>
+                            <h4>Meta-Data 시각화 분석</h4>
+                            <p>
+                                Meta-data Dashboard<br>
+                                <a href="https://datastudio.google.com/s/t6TpK5bx214" target="_blank" class="btn-rounded-gray">
+                                    <img src="https://ssl.gstatic.com/datastudio/latest/static_images/pngs/favicon_looker_studio.png" style="width: 16px; height: 16px;">
+                                    Looker Studio
+                                </a>
+                            <br><br>
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-10">
+                            <div id="dash-area">
+                                <iframe id="dash-content" src="https://lookerstudio.google.com/embed/reporting/87b08095-367c-4a9f-801e-df1be42b900b/page/WjU9C" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <br><br>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-7">
+                            <h4>최종 CNN 모델 학습 결과</h4>
+                            <img src="images/brain-alz-result.png" style="width: 100%; min-width:200px; max-width:768px;">
+                            <br><br><br>
+                        </div>
+                        <div class="col-sm-5">
+                            <h4>최종 CNN 모델 예측 결과</h4>
+                            <img src="images/brain-alz-results.png" style="width: 100%; min-width:200px; max-width:768px;">
+                            <br><br><br>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 소스코드<br>(Source Code)</h3>
+                            <p>
+                                <a href="https://github.com/kyungjaecheong/Alzheimer_MCI-CNN_Classifier" target="_blank" class="btn-rounded-gray">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    Github Repo
+                                </a>
+                                <br><br>
+                                <a href="https://velog.io/@dankj1991/Project-Alzheimer-MCI-Deep-Learning-Diagnosis-Model-1-Intro-Metadata" target="_blank" class="btn-rounded-gray">
+                                    <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                                    Tech Blog
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project no-image shadow-large">
+                    <div class="project-info">
+                        <h3>
+                            Seoul FP-Weather
+                        </h3>
+                        <p>
+                            2022.11 (개인 프로젝트)
+                        </p>
+                        <img src="images/fp-weather.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
+                        <h4>
+                            서울시 월별 날씨기반 식중독 환자수 예측 프로그램<br>
+                            Seoul Food-Posisoning Prediction Program by Weather
+                        </h4>
+                        <a href="https://fpweather-kyungjaecheong.koyeb.app/" target="_blank" class="btn-rounded-gray">
+                            <img src="images/fp-weather-icon.png" style="width: 16px; height: 16px;">
+                            Web Page
+                        </a>
+                        <br><br><br>
+                        <h3>프로젝트 개요<br>(Outline)</h3>
+                        <p>
+                            서울시 월간 기상정보를 기반으로<br>
+                            <b>서울시 월간 식중독 환자수</b>를<br>
+                            예측하는 <b>회귀 모델을 개발</b>하고<br>
+                            프로그램을 <b>웹페이지로 배포</b>하는<br>
+                            풀스택 머신러닝 프로젝트<br>
+                            <b>(Full-Stack ML Project)</b>
+                        </p>
+                        <a href="https://github.com/kyungjaecheong/Seoul-FP-Weather" target="_blank" class="btn-rounded-gray">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            Github Repo
+                        </a>
+                        <br><br>
+                        <a href="https://velog.io/@dankj1991/Project-Seoul-FP-Weather-%EB%82%A0%EC%94%A8-%EA%B8%B0%EB%B0%98-%EC%84%9C%EC%9A%B8-%EC%8B%9D%EC%A4%91%EB%8F%85-%ED%99%98%EC%9E%90-%EC%88%98-%EC%98%88%EC%B8%A1-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-1-Introduction-Database" target="_blank" class="btn-rounded-gray">
+                            <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                            Tech Blog
+                        </a>
+                        <br><br><br>
+                        <div class="col-sm-6">
+                            <h3>기획의도<br>(Intention)</h3>
+                            <br>
+                            <p>
+                                식중독은 기상 요인과 연관이<br>
+                                깊다고 알려져 있습니다.<br>
+                                <br>
+                                따라서<br>
+                                <b>날씨 정보를 통해<br>
+                                식중독 예상 환자 수를<br>
+                                인공지능으로 예측할 수<br>
+                                있지 않을까?</b>라는<br>
+                                질문으로부터 프로젝트를<br>
+                                기획하게 되었고, 웹배포까지<br>
+                                진행하게 되었습니다.<br>
+                                <br>
+                                날씨는 지역에 따라<br>
+                                차이가 심하기 때문에<br>
+                                가장 인구가 밀집 되어있는<br>
+                                서울특별시의 기상정보로<br>
+                                API 데이터를 수집하여<br>
+                                프로젝트를 진행하였습니다.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>절차 & 기술<br>(Procedure)</h3>
+                            <p>
+                                주요 개발 언어 : <b>Python</b>
+                            </p>
+                            <p>
+                                <b>[ 데이터 수집 & Cloud DB ]</b><br>
+                                Numpy, Pandas,<br>
+                                requests,<br>
+                                PostgreSQL,<br>
+                                Amazon AWS,<br>
+                                Amazon RDS
+                            </p>
+                            <p>
+                                <b>[ ML 모델링 ]</b><br>
+                                Scikit-Learn, LightGBM
+                            </p>
+                            <p>
+                                <b>[ 시각화 분석 & 대시보드 ]</b><br>
+                                Matplotlib, Seaborn,<br>
+                                Google Looker Studio,<br>
+                                Tableau public
+                            </p>
+                            <p>
+                                <b>[ Deployment (배포) ]</b><br>
+                                Bootstrap (HTML5, CSS3)<br>
+                                Flask, Gunicorn,<br>
+                                Heroku, Koyeb
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-sm-12">
+                            <img src="images/fp-weather-pipeline.png" style="width:100%;">
+                            <br><br><br>
+                        </div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 결과물<br>(Results)</h3>
+                            <p>
+                                웹페이지 링크<br>
+                                <a href="https://fpweather-kyungjaecheong.koyeb.app/" target="_blank" class="btn-rounded-gray">
+                                    <img src="images/fp-weather-icon.png" style="width: 16px; height: 16px;">
+                                    Web Page
+                                </a>
+                                <br><br>
+                            </p>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-6">
+                            <img src="images/fp-weather-desktop.jpg" style="width:100%;">
+                            <br><br>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="images/fp-weather-mobile.jpg" style="width:100%;">
+                            <br><br>
+                        </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-12">
+                            <h3>프로젝트 소스코드<br>(Source Code)</h3>
+                            <p>
+                                <a href="https://github.com/kyungjaecheong/Seoul-FP-Weather" target="_blank" class="btn-rounded-gray">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    Github Repo
+                                </a>
+                                <br><br>
+                                <a href="https://velog.io/@dankj1991/Project-Seoul-FP-Weather-%EB%82%A0%EC%94%A8-%EA%B8%B0%EB%B0%98-%EC%84%9C%EC%9A%B8-%EC%8B%9D%EC%A4%91%EB%8F%85-%ED%99%98%EC%9E%90-%EC%88%98-%EC%98%88%EC%B8%A1-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-1-Introduction-Database" target="_blank" class="btn-rounded-gray">
+                                    <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                                    Tech Blog
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/hypertension.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>
+                            Hypertension Predictive Model
+                        </h3>
+                        <p>
+                            2022.09 (개인 프로젝트)
+                        </p>
+                        <h3>한국형 고혈압 예측 모델 개발</h3>
+                        <p>
+                            국민건강영양조사 데이터를 기반으로 <b>고혈압 머신러닝 예측모델</b>을 구현하고 <b>진단기준(유럽vs미국)</b>별로 비교분석하는 프로젝트
+                            <br><br>
+                            <a href="https://github.com/kyungjaecheong/Project-Hypertension-Predictive-Model" target="_blank" class="btn-rounded-gray">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github Repo
+                            </a>
+                            <a href="https://velog.io/@dankj1991/Project-%ED%95%9C%EA%B5%AD%ED%98%95-%EA%B3%A0%ED%98%88%EC%95%95-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B8-%EA%B0%9C%EB%B0%9C-1-Intro-Data-Preparation" target="_blank" class="btn-rounded-gray">
+                                <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                                Tech Blog
+                            </a>
+                        </p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/aib-logo-300.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>
+                            Codestates AIB Project (DS,DA)
+                        </h3>
+                        <p>
+                            2022.08 (개인 프로젝트)
+                        </p>
+                        <h3>Video Game 기획 프로젝트</h3>
+                        <p>
+                            <b>"다음 분기에 어떤 게임을 설계해야 할까?"</b>라는 주제로 실시한 Codestates AIB Data Science & Data Analysis 프로젝트
+                            <br><br>
+                            <a href="https://github.com/kyungjaecheong/Project-GamePlanning" target="_blank" class="btn-rounded-gray">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                Github Repo
+                            </a>
+                            <a href="https://velog.io/@dankj1991/Project-Video-Game-%EA%B8%B0%ED%9A%8D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8" target="_blank" class="btn-rounded-gray">
+                                <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                                Tech Blog
+                            </a>
+                        </p>
                     </div>
                     <!-- End .project-info -->
                 </div>
