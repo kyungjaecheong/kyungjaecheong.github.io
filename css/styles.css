@@ -228,6 +228,21 @@ footer {
     text-decoration: none
 }
 
+.btn-rounded-gray {
+    display: inline-block;
+    color: #374054;
+    padding: 15px 25px;
+    border: 3px solid #374054;
+    border-radius: 30px;
+    transition: .5s ease all
+}
+
+.btn-rounded-gray:hover {
+    color: #fff;
+    background: #374054;
+    text-decoration: none
+}
+
 .shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
 }
@@ -558,15 +573,21 @@ footer {
 
 .project-info h3 {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 700;
     color: #374054;
     margin: 0 0 15px 0
+}
+
+.project-info h4 {
+    font-size: 1.0em;
+    font-weight: 500;
+    color: #374054;
 }
 
 .project-info p {
     color: #74808a;
     margin: 0 0 15px 0;
-    font-size: 0.9em
+    font-size: 1.0em
 }
 
 .no-image .project-info {
@@ -578,6 +599,20 @@ footer {
 
 #more-projects {
     display: none
+}
+
+#dash-area {
+    position: relative;
+    width: 100%;
+    padding-bottom: 140%;
+}
+
+#dash-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 #skills {
