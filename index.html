@@ -45,10 +45,20 @@
                 <a href="#education" class="no-scroll">Education</a>
             </li>
             <li>
+                <a href="#contact" class="no-scroll">Contact</a>
+            </li>
+            <br>
+            <li>
                 <a href="#projects" class="no-scroll">Projects</a>
             </li>
             <li>
-                <a href="#contact" class="no-scroll">Contact</a>
+                <a href="#kor-DEEP" class="no-scroll">Kor-DEEPression</a>
+            </li>
+            <li>
+                <a href="#Alz-MCI" class="no-scroll">Alzheimer & MCI</a>
+            </li>
+            <li>
+                <a href="#Seoul-FP" class="no-scroll">Seoul FP-Weather</a>
             </li>
         </ul>
     </header>
@@ -56,6 +66,7 @@
 
     <div id="lead">
         <div id="lead-content">
+            <br>
             <h1>- 정경재 -</h1>
             <h2>Daniel Cheong</h2>
             <h1>Kyung-Jae Cheong</h1>
@@ -208,8 +219,45 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project no-image shadow-large">
+                <div class="project no-image shadow-large" style="padding: 60px 15px;">
                     <div class="project-info">
+                        <div class="col-sm-12">
+                            <h3>대표 프로젝트<br>Major Projects</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><b>Kor-DEEPression</b></h4>
+                            한국형 우울증 딥러닝 예측<br>진단 프로그램 개발 및 배포<br>
+                            <br>
+                            <a href="#kor-DEEP" class="btn-rounded-gray">
+                                <img src="images/Kor-DEEP-icon.png">
+                                Kor-DEEPression
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><b>Alzheimer-MCI</b></h4>
+                            딥러닝 기반 알츠하이머 및<br>경도인지장애 진단 모델 개발<br>
+                            <br>
+                            <a href="#Alz-MCI" class="btn-rounded-gray">
+                                <img src="images/alz-logo-36.jpg" style="width: 16px; height: 16px;">
+                                Alzheimer-MCI
+                            </a>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><b>Seoul-FP-Weather</b></h4>
+                            서울시 월별 날씨기반 식중독<br>예상 환자 수 예측 프로그램<br>
+                            <br>
+                            <a href="#Seoul-FP" class="btn-rounded-gray">
+                                <img src="images/fp-weather-icon.png" style="width: 16px; height: 16px;">
+                                Seoul-FP-Weather
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project no-image shadow-large" id="kor-DEEP" style="padding: 120px 15px;">
+                    <div class="project-info">
+                        <img src="images/Kor-DEEP.jpg" style="width:160px; height:160px"/>
+                        <br><br>
                         <h3>
                             Kor-DEEPression
                         </h3>
@@ -217,7 +265,6 @@
                             2023.01 ~ 2023.02<br>
                             (개인 프로젝트)
                         </p>
-                        <img src="images/Kor-DEEP.jpg" style="width:160px; height:160px"/>
                         <h4>
                             한국형 우울증 딥러닝 예측 진단 프로그램 개발 및 배포<br>
                             Korean Depression Deep-Learning Model and Diagnosis Program
@@ -331,7 +378,10 @@
                                     <i class="fa fa-github" aria-hidden="true"></i>
                                     Github Repo
                                 </a>
-                                <br><br>
+                            </p>
+                            <br>
+                            <h3>프로젝트 세부기록<br>(Details)</h3>
+                            <p>
                                 <a href="https://velog.io/@dankj1991/Project-Kor-DEEPression" target="_blank" class="btn-rounded-gray">
                                     <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
                                     Tech Blog
@@ -363,14 +413,20 @@
                                 <i class="fa fa-github" aria-hidden="true"></i>
                                 Github Repo
                             </a>
+                            <a href="https://velog.io/@dankj1991/Codestates-Project-CP1-DS-track-ANNBinaryClassification" target="_blank" class="btn-rounded-gray">
+                                <img src="https://static.velog.io/favicons/favicon-32x32.png" style="width: 16px; height: 16px;">
+                                Tech Blog
+                            </a>
                         </p>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
 
-                <div class="project no-image shadow-large">
+                <div class="project no-image shadow-large" id="Alz-MCI" style="padding: 120px 15px;">
                     <div class="project-info">
+                        <img src="images/brain-alz.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
+                        <br><br>
                         <h3>
                             Alzheimer & MCI<br>
                             Deep-Learning<br>
@@ -379,7 +435,6 @@
                         <p>
                             2022.12 (개인 프로젝트)
                         </p>
-                        <img src="images/brain-alz.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
                         <h4>
                             딥러닝 기반 알츠하이머 및 경도인지장애(MCI) 진단 모델 개발<br>
                             Deep Learning based Alzheimer and MCI Diagnosis Model
@@ -422,7 +477,7 @@
                                 <b>합성곱 신경망(CNN)을 통한<br>
                                 알츠하이머와 경도인지장애<br>
                                 예측 진단 모델</b>을 통해서<br>
-                                보다 <b>정확한 치매 진단</b><br>
+                                보다 <b>정확한 치매 진단</b>과<br>
                                 <b>치매 예방</b>에 기여하고자<br>
                                 본 프로젝트를 기획하고<br>
                                 진행하게 되었습니다.
@@ -508,15 +563,16 @@
                 </div>
                 <!-- End .project -->
 
-                <div class="project no-image shadow-large">
+                <div class="project no-image shadow-large" id="Seoul-FP" style="padding: 120px 15px;">
                     <div class="project-info">
+                        <img src="images/fp-weather.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
+                        <br><br>
                         <h3>
                             Seoul FP-Weather
                         </h3>
                         <p>
                             2022.11 (개인 프로젝트)
                         </p>
-                        <img src="images/fp-weather.jpg" style="width:50%; min-width:200px; max-width:500px;"/>
                         <h4>
                             서울시 월별 날씨기반 식중독 환자수 예측 프로그램<br>
                             Seoul Food-Posisoning Prediction Program by Weather
