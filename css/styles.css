@@ -372,7 +372,7 @@ footer {
 }
 
 #about {
-    padding: 75px 15px;
+    padding: 120px 15px;
     border-bottom: 1px solid #dcd9d9
 }
 
@@ -383,7 +383,7 @@ footer {
 
 #about p {
     color: #74808a;
-    margin: 0
+    margin: 0;
 }
 
 #experience {
@@ -491,7 +491,7 @@ footer {
 }
 
 #education {
-    padding: 75px 15px 20px 15px;
+    padding: 120px 15px 60px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
 }
@@ -540,7 +540,7 @@ footer {
 }
 
 #projects {
-    padding: 75px 15px;
+    padding: 120px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
 }
@@ -593,7 +593,7 @@ footer {
 .no-image .project-info {
     position: relative;
     margin: 0;
-    padding: 30px 15px;
+    padding: 0;
     transform: none
 }
 
@@ -616,7 +616,7 @@ footer {
 }
 
 #skills {
-    padding: 75px 15px;
+    padding: 120px 15px;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
 }
@@ -644,7 +644,7 @@ footer {
 }
 
 #contact {
-    padding: 50px 15px;
+    padding: 120px 15px;
     background: #6f42c1;
     color: #fff;
     text-align: center
